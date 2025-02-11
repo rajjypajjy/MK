@@ -1,35 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be My Valentine</title>
-
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #ffe5e5; /* Soft pink background */
+      }
+      .container {
+        border: 2px solid #ff4c6a;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffe5e5;
+        display: inline-block;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+      }
+      h1 {
+        color: #ff4c6a;
+        font-size: 28px; /* Increased size by 20% */
+      }
+      .btn {
+        margin-top: 40px;
+      }
+      .btn a {
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      /* Yes button (green) */
+      .btn a.yes-button {
+        background-color: #4caf50; /* Green */
+        color: white;
+      }
+      .btn a.yes-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+      /* No button (red) */
+      .btn a.no-button {
+        background-color: #f44336; /* Red */
+        color: white;
+      }
+      .btn a.no-button:hover {
+        background-color: #e53935; /* Darker red on hover */
+      }
+      .gif-container {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        max-width: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+      }
+      .tenor-gif-embed {
+        width: 90%; /* Make the GIF take up the full width of the container */
+        max-width: 100%; /* Ensure it doesn't exceed container width */
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div
-        class="tenor-gif-embed"
-        data-postid="23103077"
-        data-share-method="host"
-        data-aspect-ratio="1"
-        data-width="100%"
-      >
-        <a href="https://tenor.com/view/likeyouneverdo-crying-chiwawa-gif-23103077">Likeyouneverdo Crying Chiwawa GIF</a>from <a href="https://tenor.com/search/likeyouneverdo-gifs">Likeyouneverdo GIFs</a>
+      <!-- Embed the new GIF above the question -->
+      <div class="gif-container">
+        <div class="tenor-gif-embed" data-postid="23103077" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+          <a href="https://tenor.com/view/likeyouneverdo-crying-chiwawa-gif-23103077">Likeyouneverdo Crying Chiwawa GIF</a> from 
+          <a href="https://tenor.com/search/likeyouneverdo-gifs">Likeyouneverdo GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
       </div>
-      <script
-        type="text/javascript"
-        async
-        src="https://tenor.com/embed.js"
-      ></script>
 
       <h1>Babeeee, please! 🥺</h1>
 
-  <div class="btn">
-        <a href="yes_page.html">Yes</a>
-        <a href="no4.html">No</a>
+      <div class="btn">
+        <a href="yes_page.html" class="yes-button">Yes</a>
+        <a href="no4.html" class="no-button">No</a>
       </div>
     </div>
   </body>
