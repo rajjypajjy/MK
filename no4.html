@@ -23,6 +23,7 @@
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+        position: relative; /* Positioning context for moving the button */
       }
       h1 {
         color: #ff4c6a;
@@ -30,6 +31,7 @@
       }
       .btn {
         margin-top: 40px;
+        position: relative;
       }
       .btn a {
         font-size: 18px;
@@ -92,5 +94,22 @@
         <a href="#" id="move-random" class="no-button">No</a>
       </div>
     </div>
+
+    <script>
+      // Function to move the "No" button randomly
+      document.getElementById("move-random").addEventListener("click", function(event) {
+        const container = document.querySelector(".container");
+        const button = event.target;
+
+        // Get random values for position within the container
+        const randomX = Math.random() * (container.offsetWidth - button.offsetWidth);
+        const randomY = Math.random() * (container.offsetHeight - button.offsetHeight);
+
+        // Move the button to the random position
+        button.style.position = "absolute";
+        button.style.left = `${randomX}px`;
+        button.style.top = `${randomY}px`;
+      });
+    </script>
   </body>
 </html>
