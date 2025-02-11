@@ -99,6 +99,20 @@
             margin-top: 50px;
             text-align: center;
         }
+
+        /* Styling for button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Styling for iPhone calendar icon */
+        .iphone-calendar-icon {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -116,22 +130,28 @@
         </div>
 
         <div class="card">
-            <h2>12:30 PM - 2:00 PM: Lunch at Staple Dough, PJ</h2>
+            <h2>12:30 PM - 2:00 PM: Lunch at Staple Dough</h2>
             <p>Our first stop is Staple Dough for a delicious lunch. Let's enjoy their amazing menu!</p>
-            <p><a href="https://maps.app.goo.gl/sDzS1RSEim8LYJBY9" target="_blank">
-                <button class="icon-button"><i class="fas fa-map-marker-alt"></i> Location</button></a>
-            <a href="https://www.stapledough.com/menu" target="_blank">
-                <button class="icon-button"><i class="fas fa-utensils"></i> Menu</button></a>
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Valentine's+Special+with+Rajdeep&dates=20250215T123000Z/20250215T140000Z&details=Lunch+at+Staple+Dough+PJ&location=Staple+Dough%2C+PJ" class="icon-button" target="_blank">
-                <i class="fas fa-calendar-plus"></i> Add to Calendar</a>
+            <div class="button-container">
+                <a href="https://maps.app.goo.gl/sDzS1RSEim8LYJBY9" target="_blank">
+                    <button class="icon-button"><i class="fas fa-map-marker-alt"></i> Location</button>
+                </a>
+                <a href="https://www.stapledough.com/menu" target="_blank">
+                    <button class="icon-button"><i class="fas fa-utensils"></i> Menu</button>
+                </a>
+    
+            </div>
         </div>
 
         <!-- Second Plan: Foot Massage -->
         <div class="card">
             <h2>2:30 PM - 4:00 PM: Foot Massage at HealthLand</h2>
             <p>Next, we'll head to HealthLand for a relaxing 90-minute foot massage to unwind.</p>
-            <p><a href="https://maps.app.goo.gl/qJSpc2BPLAyKmE4J8" target="_blank">
-                <button class="icon-button"><i class="fas fa-map-marker-alt"></i> Location</button></a>
+            <div class="button-container">
+                <a href="https://maps.app.goo.gl/qJSpc2BPLAyKmE4J8" target="_blank">
+                    <button class="icon-button"><i class="fas fa-map-marker-alt"></i> Location</button>
+                </a>
+            </div>
         </div>
 
         <!-- Third Plan: Kayak -->
@@ -144,7 +164,7 @@
     <footer class="footer">
         <p>I'm so looking forward to spending the day with you!</p>
         <p>For more info, feel free to <a href="https://wa.me/60166420226" target="_blank">
-            <button class="icon-button"><i class="fab fa-whatsapp"></i> WhatsApp me</button></a>.</p>
+            <button class="icon-button"><i class="fab fa-whatsapp"></i> WhatsApp me</button></a></p>
     </footer>
 
     <!-- Countdown Timer -->
@@ -175,3 +195,5 @@
 
 </body>
 </html>
+
+
